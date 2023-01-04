@@ -11,14 +11,19 @@ export default function Videos() {
         isLoading,
         error,
         data: videoList,
-    } = useQuery(['videos', keyword], () => youtubeApiClient.Search());
+    } = useQuery(['videos', keyword], () =>
+        keyword ? youtubeApiClient.Search(keyword) : youtubeApiClient.Popular()
+    );
+
     if (isLoading) return <p>is Loading</p>;
     if (error) return <p>is error</p>;
 
     return (
         <section>
-            <h1>videos</h1>
-            <ul>
+            <ul
+                className="grid gird-cols-1 
+            2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 gap-2 gap-y-4"
+            >
                 {videoList &&
                     videoList.map(video => (
                         <VideoCard key={video.id} video={video} />

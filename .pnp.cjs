@@ -28,6 +28,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@tailwindcss/line-clamp", "virtual:b9a223b24ecdb6de1fc392984e2d7d5134981098eac65697634ebd40089e049a2fb1a398134108c8bc60fb03f456e8a9a03fd310aa81a8cba4ffb218b9b91942#npm:0.4.2"],\
             ["@testing-library/jest-dom", "npm:5.16.5"],\
             ["@testing-library/react", "virtual:b9a223b24ecdb6de1fc392984e2d7d5134981098eac65697634ebd40089e049a2fb1a398134108c8bc60fb03f456e8a9a03fd310aa81a8cba4ffb218b9b91942#npm:13.4.0"],\
             ["@testing-library/user-event", "virtual:b9a223b24ecdb6de1fc392984e2d7d5134981098eac65697634ebd40089e049a2fb1a398134108c8bc60fb03f456e8a9a03fd310aa81a8cba4ffb218b9b91942#npm:13.5.0"],\
@@ -41,6 +42,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-router-dom", "virtual:b9a223b24ecdb6de1fc392984e2d7d5134981098eac65697634ebd40089e049a2fb1a398134108c8bc60fb03f456e8a9a03fd310aa81a8cba4ffb218b9b91942#npm:6.6.1"],\
             ["react-scripts", "virtual:b9a223b24ecdb6de1fc392984e2d7d5134981098eac65697634ebd40089e049a2fb1a398134108c8bc60fb03f456e8a9a03fd310aa81a8cba4ffb218b9b91942#npm:5.0.1"],\
             ["tailwindcss", "virtual:b9a223b24ecdb6de1fc392984e2d7d5134981098eac65697634ebd40089e049a2fb1a398134108c8bc60fb03f456e8a9a03fd310aa81a8cba4ffb218b9b91942#npm:3.2.4"],\
+            ["timeago-react", "virtual:b9a223b24ecdb6de1fc392984e2d7d5134981098eac65697634ebd40089e049a2fb1a398134108c8bc60fb03f456e8a9a03fd310aa81a8cba4ffb218b9b91942#npm:3.0.5"],\
+            ["timeago.js", "npm:4.0.2"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
           "linkType": "SOFT"\
@@ -4108,6 +4111,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@svgr/plugin-jsx", "npm:5.5.0"],\
             ["@svgr/plugin-svgo", "npm:5.5.0"],\
             ["loader-utils", "npm:2.0.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@tailwindcss/line-clamp", [\
+        ["npm:0.4.2", {\
+          "packageLocation": "./.yarn/cache/@tailwindcss-line-clamp-npm-0.4.2-7e8725ef00-26b8135df2.zip/node_modules/@tailwindcss/line-clamp/",\
+          "packageDependencies": [\
+            ["@tailwindcss/line-clamp", "npm:0.4.2"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:b9a223b24ecdb6de1fc392984e2d7d5134981098eac65697634ebd40089e049a2fb1a398134108c8bc60fb03f456e8a9a03fd310aa81a8cba4ffb218b9b91942#npm:0.4.2", {\
+          "packageLocation": "./.yarn/__virtual__/@tailwindcss-line-clamp-virtual-72594e464c/0/cache/@tailwindcss-line-clamp-npm-0.4.2-7e8725ef00-26b8135df2.zip/node_modules/@tailwindcss/line-clamp/",\
+          "packageDependencies": [\
+            ["@tailwindcss/line-clamp", "virtual:b9a223b24ecdb6de1fc392984e2d7d5134981098eac65697634ebd40089e049a2fb1a398134108c8bc60fb03f456e8a9a03fd310aa81a8cba4ffb218b9b91942#npm:0.4.2"],\
+            ["@types/tailwindcss", null],\
+            ["tailwindcss", "virtual:b9a223b24ecdb6de1fc392984e2d7d5134981098eac65697634ebd40089e049a2fb1a398134108c8bc60fb03f456e8a9a03fd310aa81a8cba4ffb218b9b91942#npm:3.2.4"]\
+          ],\
+          "packagePeers": [\
+            "@types/tailwindcss",\
+            "tailwindcss"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -16384,6 +16409,38 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["timeago-react", [\
+        ["npm:3.0.5", {\
+          "packageLocation": "./.yarn/cache/timeago-react-npm-3.0.5-241546c864-79a2c9d7ef.zip/node_modules/timeago-react/",\
+          "packageDependencies": [\
+            ["timeago-react", "npm:3.0.5"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:b9a223b24ecdb6de1fc392984e2d7d5134981098eac65697634ebd40089e049a2fb1a398134108c8bc60fb03f456e8a9a03fd310aa81a8cba4ffb218b9b91942#npm:3.0.5", {\
+          "packageLocation": "./.yarn/__virtual__/timeago-react-virtual-5234edb677/0/cache/timeago-react-npm-3.0.5-241546c864-79a2c9d7ef.zip/node_modules/timeago-react/",\
+          "packageDependencies": [\
+            ["timeago-react", "virtual:b9a223b24ecdb6de1fc392984e2d7d5134981098eac65697634ebd40089e049a2fb1a398134108c8bc60fb03f456e8a9a03fd310aa81a8cba4ffb218b9b91942#npm:3.0.5"],\
+            ["@types/react", null],\
+            ["react", "npm:18.2.0"],\
+            ["timeago.js", "npm:4.0.2"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["timeago.js", [\
+        ["npm:4.0.2", {\
+          "packageLocation": "./.yarn/cache/timeago.js-npm-4.0.2-e87d64f9a3-c785a06988.zip/node_modules/timeago.js/",\
+          "packageDependencies": [\
+            ["timeago.js", "npm:4.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["tmpl", [\
         ["npm:1.0.5", {\
           "packageLocation": "./.yarn/cache/tmpl-npm-1.0.5-d399ba37e2-cd922d9b85.zip/node_modules/tmpl/",\
@@ -17665,6 +17722,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["youtube_project", "workspace:."],\
+            ["@tailwindcss/line-clamp", "virtual:b9a223b24ecdb6de1fc392984e2d7d5134981098eac65697634ebd40089e049a2fb1a398134108c8bc60fb03f456e8a9a03fd310aa81a8cba4ffb218b9b91942#npm:0.4.2"],\
             ["@testing-library/jest-dom", "npm:5.16.5"],\
             ["@testing-library/react", "virtual:b9a223b24ecdb6de1fc392984e2d7d5134981098eac65697634ebd40089e049a2fb1a398134108c8bc60fb03f456e8a9a03fd310aa81a8cba4ffb218b9b91942#npm:13.4.0"],\
             ["@testing-library/user-event", "virtual:b9a223b24ecdb6de1fc392984e2d7d5134981098eac65697634ebd40089e049a2fb1a398134108c8bc60fb03f456e8a9a03fd310aa81a8cba4ffb218b9b91942#npm:13.5.0"],\
@@ -17678,6 +17736,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-router-dom", "virtual:b9a223b24ecdb6de1fc392984e2d7d5134981098eac65697634ebd40089e049a2fb1a398134108c8bc60fb03f456e8a9a03fd310aa81a8cba4ffb218b9b91942#npm:6.6.1"],\
             ["react-scripts", "virtual:b9a223b24ecdb6de1fc392984e2d7d5134981098eac65697634ebd40089e049a2fb1a398134108c8bc60fb03f456e8a9a03fd310aa81a8cba4ffb218b9b91942#npm:5.0.1"],\
             ["tailwindcss", "virtual:b9a223b24ecdb6de1fc392984e2d7d5134981098eac65697634ebd40089e049a2fb1a398134108c8bc60fb03f456e8a9a03fd310aa81a8cba4ffb218b9b91942#npm:3.2.4"],\
+            ["timeago-react", "virtual:b9a223b24ecdb6de1fc392984e2d7d5134981098eac65697634ebd40089e049a2fb1a398134108c8bc60fb03f456e8a9a03fd310aa81a8cba4ffb218b9b91942#npm:3.0.5"],\
+            ["timeago.js", "npm:4.0.2"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
           "linkType": "SOFT"\

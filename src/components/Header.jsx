@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BsYoutube, BsSearch } from 'react-icons/bs';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate, Link, useParams } from 'react-router-dom';
 
 export default function Header() {
+    const { keyword } = useParams();
     const navigate = useNavigate();
     const [text, setText] = useState('');
+
+    useEffect(() => setText(keyword || ''), [keyword]);
 
     const handleChange = e => {
         setText(e.target.value);
@@ -28,6 +31,7 @@ export default function Header() {
                 <input
                     className="text-black w-1/2 pl-2"
                     id="input"
+                    value={text}
                     type="text"
                     onChange={handleChange}
                 />
