@@ -1,14 +1,15 @@
 import React from 'react';
 import { useLocation, useParams } from 'react-router-dom';
+import ChannelInfo from '../components/ChannelInfo';
+import RelatedVideos from '../components/RelatedVideos';
 
 export default function VideoDetail() {
     const { videoId } = useParams();
     const location = useLocation();
     const { title, channelTitle, channelId, description } = location.state;
-    console.log(videoId);
     return (
-        <section>
-            <article>
+        <section className="flex flex-col xl:flex-row ">
+            <article className=" basis-2/3">
                 <iframe
                     title={title}
                     id="player"
@@ -19,14 +20,16 @@ export default function VideoDetail() {
                     frameBorder="0"
                 ></iframe>
                 <h1>{title}</h1>
-                <div>
-                    <img src="" alt="channelThumnail" />
-                    <p>{channelTitle}</p>
-                </div>
-                <pre>{description}</pre>
+                <ChannelInfo
+                    channelId={channelId}
+                    channelTitle={channelTitle}
+                />
+                <pre className="whitespace-pre-wrap">{description}</pre>
             </article>
 
-            <section>related video list area</section>
+            <section className="basis-1/3 m-4">
+                <RelatedVideos videoId={videoId} />
+            </section>
         </section>
     );
 }

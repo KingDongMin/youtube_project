@@ -11,8 +11,13 @@ export default function Videos() {
         isLoading,
         error,
         data: videoList,
-    } = useQuery(['videos', keyword], () =>
-        keyword ? youtubeApiClient.Search(keyword) : youtubeApiClient.Popular()
+    } = useQuery(
+        ['videos', keyword],
+        () =>
+            keyword
+                ? youtubeApiClient.Search(keyword)
+                : youtubeApiClient.Popular(),
+        { staleTime: 1000 * 60 * 5 }
     );
 
     if (isLoading) return <p>is Loading</p>;
